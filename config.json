@@ -1,0 +1,25 @@
+{
+  "name": "WebDAV Server",
+  "version": "1",
+  "slug": "webdav-server",
+  "description": "WebDAV Server",
+  "arch": ["amd64"],
+  "startup": "application",
+  "boot": "auto",
+  "ports": {
+    "2476/tcp": 2476
+  },
+  "ports_description": {
+    "2476/tcp": "WEBDAV Server Port"
+  },
+  "host_network": true,
+  "map": ["media:rw"],
+  "options": {
+    "username": "Jack",
+    "password": "test123"
+  },
+  "schema": {
+    "username": "str",
+    "password": "str"
+  }
+}
